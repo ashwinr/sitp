@@ -36,7 +36,7 @@ fillForm = (fn, ad) ->
   $('#VtixFormStep1_FullName').val fn
   $('#VtixFormStep1_StreetAddress').val ad
   $('#VtixFormStep1_SeatingPref').empty().append('<option value="1">General</option>').val '1'
-#  $('form').submit()
+  $('form').submit()
 
 incorrectArgs = ->
   return !(casper.cli.has('user') && casper.cli.has('password') && casper.cli.has('fullname') && casper.cli.has('address'))
